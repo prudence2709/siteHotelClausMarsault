@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Dancing Script", cursive; */
+    /* font-family: "Advent Pro", sans-serif; */
+}
+body{
+    text-align: center;
+    min-height: 150vh;
+    font-family: "Advent Pro", sans-serif;  
+    padding: 0; 
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2rem;
+    
+}
+/* ********************HEADER********************* */
+header.header{
+    min-height: 400px; 
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #eeede7;
+    width: 100%;
+    opacity: 0.9;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+   
+}
+.nav ul li{
+    padding: 18px 16px;
+    font-size: 1.2rem;
+}
+#logo{
+    font-family: "Dancing Script", cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 18px 16px;
+}
+/* ****************landing page****************** */
+.landing-page{
+    height: 60vh;
+    background: url(./images/media/image-principale.JPG) center/cover;
+    padding-top: 140px;
+    color:#eeede7;
+
+}
+.landing-page h1{
+    font-weight: 800;
+    font-size: 3.1rem;
+    margin-bottom: 40px;
+    text-shadow: 3px 1px 3px #928850;
+    font-family: "Dancing Script", cursive;
+    text-transform: capitalize;
+}
+.premierTrait{
+    width: 35%;
+    height: 1px;
+    background-color: #FFFAE1;
+    box-shadow: -2px -2px 4px 1px #dfdccc;
+    margin:auto;
+    margin-bottom: 40px;
+}
+.landing-page h4{
+    font-weight: 500;
+    font-size: 2.1rem;
+}
+/*********** Section/ Presentation *************** */
+.presentation{
+    background-color: #f0eacc;
+    padding: 60px 0;
+    
+}
+.texte-presentation{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.texte-presentation p{
+    text-align: left;
+}
+
+.presentations-images{
+    display: flex;
+    justify-content: space-around;
+
+}
+.presentation-image h5{
+    font-size: 1.8rem;
+    font-weight: 200;
+    font-family: "Dancing Script", cursive; 
+    margin: 15px;
+}
+.presentation-image img{
+    border-radius: 25px;
+    box-shadow: 5px 5px 3px 1px #161616ef;
+    transition: 0.3s ease-in-out;
+
+}
+.presentation-image img:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.presentation-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ************** Section/Decouverte ************** */
+.decouverte{
+background-color: #f1f2f6;
+   min-height: 1350px;
+   color: #0c0c0c;
+ 
+   /* padding: 50px 10px; */
+   
+}
+.img-decouverte{
+    background-repeat:no-repeat;
+    width: 55%;
+    height: 226px;
+   margin: 65px 100px 0 100px;
+   max-width: 550px;
+    box-shadow: 6px 6px 20px -1 rgba(0,0,0,0.75);
+    float:left;
+}
+.img1decouverte{
+    background: url(./images/media/ocean.jpg) center/cover;
+   
+}
+.img1decouverte{
+    background: url(./images/media/ocean.jpg) center/cover;
+   
+}
+.img2decouverte{
+    background: url(./images/media/chateau.JPG) center/cover;
+   
+}
+.img3decouverte{
+    background: url(./images/media/phare.JPG) center/cover;
+   
+}
+.img4decouverte{
+    background: url(./images/media/vignes.jpg) center/cover;
+   
+}
+
+.img-decouverte p{
+    width: 235px;
+    height: 45px;
+    border: none;
+    background-color: cyan;
+    float: right;
+    margin: 50px -100px 0 0;
+    box-shadow:5px 5px 0 black;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+.img2decouverte, .img4decouverte{
+    float: right;
+}
+.img1decouverte p, .img3decouverte p{
+    float: left;
+    margin: 50px 0 0 -100px;
+    background-color: #46cbf3;
+    box-shadow: -4px 4px 0 1px rgba(15,154,156,1);
+}
+
+/*********** Section Contact ********** */
+.contact{
+    
+    background: #6d4f38;
+    padding-bottom: 20px 0 10px;
+    color: white;
+}
+form{
+    /* width: 40%; */
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+
+   
+}
+input,textarea,button{
+    border: none; 
+    border-radius: 5px;
+    margin:1px auto;
+    background: #edf4fc;
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    font-family: "Advent Pro", sans-serif;
+    width: 55%; 
+}
+textarea{
+    height: 120px;
+    resize: none;
+}
+button{
+    font-size: 1.5rem;
+    background-color: #FFFAE1;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: rgb(228, 71, 71);
+    color: white;
+    cursor: pointer;
+}
+
+.deuxiemeTrait{
+     width: 75%;
+    height: 1px;
+    background-color: #FFFAE1;
+    margin:60px auto;
+}
+
+/* *****Footer******* */
+.copyrigth-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px; */
+    color: whitesmoke;
+    padding: 0 10%;
+    /* border: 1px solid black; */
+    padding-bottom: 30px;
+}
+.icons i{
+    padding: 0 15px;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.icons i:hover{
+    transform: scale(1.5);
+}
+
